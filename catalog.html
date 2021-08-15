@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>catalog</title>
 </head>
 <body>
   <header>
@@ -23,6 +23,63 @@
   </header>
   <main>
     <h1>Магазин готовых шаблонов</h1>
+      <form action="http://echo.htmlacademy.ru" method="GET">
+        <fieldset>
+          <legend>стоимость:</legend>
+          <p>
+            <label for="price-from">от</label>
+            <input id="price-from" type="text" name="from" placeholder="0">
+          </p>
+          <p>
+            <label for="price-before">от</label>
+            <input id="price-before" type="text" name="before" placeholder="15 000">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="grid" value="adaptive" id="filter-
+              adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            <li>
+              <input type="radio" name="grid" value="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" value="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>особенности:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="slider" id="filter-slider">
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="block-of-benefits" id="filter-block-of-benefits">
+              <label for="filter-block-of-benefits">Блок преймуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news">
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">показать</button>
+      </form>
     <section>
       <h2>где нас найти</h2>
       <img src="img/map 1.png">
