@@ -23,7 +23,7 @@
   </header>
   <main>
     <h1>Магазин готовых шаблонов</h1>
-      <form action="http://echo.htmlacademy.ru" method="GET">
+    <form action="http://echo.htmlacademy.ru" method="GET">
         <fieldset>
           <legend>стоимость:</legend>
           <p>
@@ -79,8 +79,36 @@
           </ul>
         </fieldset>
         <button type="submit">показать</button>
-      </form>
-      <section>
+    </form>
+    <form action="http://echo.htmlacademy.ru" method="GET">
+        <fieldset>
+          <legend>сортировать:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="sorting" value="price" id="filter-price" checked>
+              <label for="filter-price">по цене</label>
+            </li>
+            <li>
+              <input type="radio" name="sorting" value="type" id="filter-type">
+              <label for="filter-type">по типу</label>
+            </li>
+            <li>
+              <input type="radio" name="sorting" value="name" id="filter-name">
+              <label for="filter-name">по названию</label>
+            </li>
+            <li>
+              <input type="radio" name="order" value="waning" id="filter-waning" checked>
+              <label for="filter-waning">убывание</label>
+            </li>
+            <li>
+              <input type="radio" name="order" value="increase" id="filter-increase">
+              <label for="filter-increase">возрастание</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">показать</button>
+    </form>
+    <section>
         <h2>список товаров</h2>
         <ul>
           <li>
@@ -120,7 +148,16 @@
             </a>
           </li>
         </ul>
-      </section>
+        <div>
+          <ul>
+            <li><button>1</button></li>
+            <li><button>2</button></li>
+            <li><button>3</button></li>
+            <li><button>следующая</button></li>
+            
+          </ul>
+        </div>
+    </section>
     <section>
       <h2>где нас найти</h2>
       <img src="img/map 1.png">
