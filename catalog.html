@@ -18,7 +18,10 @@
       </ul>
     </nav>
     <div>
-      <a href="#"><img src="img/Shape.svg">корзина</a>
+      <a href="#">
+        <img src="img/Shape.svg">
+        <span>корзина</span>
+      </a>
     </div>
   </header>
   <main>
@@ -80,83 +83,64 @@
         </fieldset>
         <button type="submit">показать</button>
     </form>
-    <form action="http://echo.htmlacademy.ru" method="GET">
-        <fieldset>
-          <legend>сортировать:</legend>
-          <ul>
-            <li>
-              <input type="radio" name="sorting" value="price" id="filter-price" checked>
-              <label for="filter-price">по цене</label>
-            </li>
-            <li>
-              <input type="radio" name="sorting" value="type" id="filter-type">
-              <label for="filter-type">по типу</label>
-            </li>
-            <li>
-              <input type="radio" name="sorting" value="name" id="filter-name">
-              <label for="filter-name">по названию</label>
-            </li>
-            <li>
-              <input type="radio" name="order" value="waning" id="filter-waning" checked>
-              <label for="filter-waning">убывание</label>
-            </li>
-            <li>
-              <input type="radio" name="order" value="increase" id="filter-increase">
-              <label for="filter-increase">возрастание</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit">показать</button>
-    </form>
     <section>
         <h2>список товаров</h2>
         <ul>
           <li>
-            <a href="#">
-              <img src="img/img-sedona 1.jpg">
-            </a>
+            <img src="img/img-sedona 1.jpg">
             <div>
-              <p>Sedona</p>
+              <a href="#"><p>Sedona</p></a>
               <p>Информационный сайт<br>
                  для туристов</p>
               <a href="#">9 900 ₽</a>
             </div>
           </li>
           <li>
-            <a href="#">
-              <img src="img/img-pink 1.jpg">
-            </a>
+            <img src="img/img-pink 1.jpg">
+            <div>
+              <a href="#">Pink app</a>
+              <p>Продуктовый лендинг<br>
+                 приложений для IOS и Android</p>
+                <a href="#">9 900 ₽</a>
+            </div>
           </li>
           <li>
-            <a href="#">
-              <img src="img/img-barbershop 1.jpg">
-            </a>
+            <img src="img/img-barbershop 1.jpg">
+            <div>
+              <a href="#">Barbershop</a>
+              <p>Сайт салона красоты.<br>
+                 Для мужчин, да.</p>
+              <a href="#">9 900 ₽</a>
+            </div>
           </li>
           <li>
-            <a href="#">
-              <img src="img/img-mishka 1.jpg">
-            </a>
+            <img src="img/img-mishka 1.jpg">
+            <div>
+              <a href="#">Mishka</a>
+              <p>Интернет-магазин <br>
+                 вязаных игрушек</p>
+              <a href="#">9 900 ₽</a>
+            </div>
           </li>
           <li>
-            <a href="#">
-              <img src="img/img-aplus 1.jpg">
-            </a>
+            <img src="img/img-aplus 1.jpg">
+            <div>
+              <a href="#">A Plus</a>
+              <p>Лендинг курсов повышения<br>
+                 квалификации</p>
+              <a href="#">9 900 ₽</a>
+            </div>
           </li>
           <li>
-            <a href="#">
-              <img src="img/img-kvast 1.jpg">
-            </a>
+            <img src="img/img-kvast 1.jpg">
+            <div>
+              <a href="#">Кваст</a>
+              <p>Промо-сайт производителя<br>
+                 крафтового кваса</p>
+              <a href="#">9 900 ₽</a>
+            </div>
           </li>
         </ul>
-        <div>
-          <ul>
-            <li><button>1</button></li>
-            <li><button>2</button></li>
-            <li><button>3</button></li>
-            <li><button>следующая</button></li>
-            
-          </ul>
-        </div>
     </section>
     <section>
       <h2>где нас найти</h2>
@@ -172,6 +156,29 @@
         </p>
         <button>напишите нам</button>
       </div>
+    </section>
+    <section>
+      <h2>форма записи</h2>
+      <button>
+        <img src="img/close-cross 1.svg">
+        <span>закрыть</span>
+      </button>
+      <p>Напишите нам</p>
+      <form action="http://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="appointment-name">Ваше имя:</label>
+          <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="appointment-email">Ваш email:</label>
+          <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="appointment-text">Текст письма</label>
+          <input id="appointment-text" type="text" name="text" placeholder="В свободной форме">
+        </p>
+        <button type="submit">отправить</button>
+      </form>
     </section>
   </main>
   <footer>
