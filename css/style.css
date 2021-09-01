@@ -7,6 +7,7 @@
   --green: #00CA74;
   --yellow: #EFC849;
   --neutral: #EEEEEE;
+  --gray: #666666;
 }
 
 .visually-hidden {
@@ -47,6 +48,7 @@ ul {
 
 .button {
   border-radius: 3px;
+  border: 0;
   padding-top: 17px;
   padding-bottom: 15px;
   text-align: center;
@@ -69,6 +71,22 @@ ul {
 
 .basket-navigation {
   text-align: right;
+}
+
+.description-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--black);
+}
+
+.description-text {
+  color: var(--extra-dark);
+}
+
+.description-button {
+  padding-left: 54px;
+  padding-right: 54px;
 }
 
 .goods-title {
@@ -94,4 +112,98 @@ ul {
 
 .goods-presentations .button {
   background-color: var(--yellow);
+}
+
+.benefits-title {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.benefits-subtitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--extra-dark);
+}
+
+.benefits-list-goods {
+  list-style: circle;
+}
+
+.benefits-peculiarities {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.benefits-peculiarities-title {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--black);
+}
+
+.benefits-peculiarities-text {
+  line-height: 18px;
+}
+
+.location div {
+  background-color: var(--white);
+}
+
+.location-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.location-text {
+  line-height: 18px;
+  color: var(--gray);
+}
+
+.location-button {
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.modal {
+  box-shadow: 0px, 20px, 40px, rgba(0, 0, 0, 0.4);
+}
+
+.modal-close {
+  border: 0;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--black);
+}
+
+.record-form label {
+  line-height: 18px;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.modal-button {
+  padding-right: 83px;
+  padding-left: 83px;
+}
+
+.footer-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: var(--black)
+}
+
+.footer-text {
+  line-height: 22px;
+  color: var(--light-dark)
 }
